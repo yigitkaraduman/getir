@@ -1,7 +1,7 @@
 from flask import  render_template, flash, redirect, url_for
-from flaskblog import app, db, bcrypt
-from flaskblog.forms import RegistrationForm, LoginForm
-from flaskblog.models import User
+from getirwapp import app, db, bcrypt
+from getirwapp.forms import RegistrationForm, LoginForm
+from getirwapp.models import User
 from flask_login import login_user, current_user, logout_user, login_required
 
 
