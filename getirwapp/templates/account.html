@@ -1,4 +1,61 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>{{ current_user.username }}</h1>
+    <div class="content-section">
+  <div class="media">
+    <img class="rounded-circle account-img" src={{ image_file }}>
+    <div class="media-body">
+      <h2 class="account-heading">{{ current_user.username }}</h2>
+      <p class="text-secondary">{{ current_user.email }}</p>
+      <p class="text-secondary">{{ current_user.tel_no }}</p>
+      <p class="text-secondary">{{ current_user.address }}</p>
+    </div>
+  </div>
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Account Info</legend>
+                <div class="form-group">
+                    {{ form.username.label(class="form-control-label") }}
+
+                    {% if form.username.errors %}
+                        {{ form.username(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                 <div class="form-group">
+                    {{ form.tel_no.label(class="form-control-label") }}
+                    {{ form.tel_no(class="form-control form-control-lg") }}
+                </div>
+                 <div class="form-group">
+                    {{ form.address.label(class="form-control-label") }}
+                    {{ form.address(class="form-control form-control-lg") }}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <input type="submit" name="update_info" value="Update" class="btn btn-outline-info">
+                <input type="submit" name="reset_password" value="Reset Password" class="btn btn-outline-info">
+            </div>
+        </form>
+    </div>
+</div>
 {% endblock content %}

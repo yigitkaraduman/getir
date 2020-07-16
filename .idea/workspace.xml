@@ -2,23 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8725eb30-3c0d-42e9-b927-31436d1b1cae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EER.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Untitled Document.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getir_mapping.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/site.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/getir.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/static/getir.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getirwapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getirwapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getirwapp/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getirwapp/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/site.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getirwapp/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getirwapp/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,10 +33,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1eSt9uaxE9RE54FvXdMcrhtwGxC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -54,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aSUS\Desktop\372getir\getirwapp\static\profile_pics" />
       <recent name="C:\Users\aSUS\PycharmProjects\Flask\flaskblog\static" />
       <recent name="C:\Users\aSUS\PycharmProjects\Flask\flaskblog" />
     </key>
@@ -75,6 +74,9 @@
       <module name="Flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -123,5 +125,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
