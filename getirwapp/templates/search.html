@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Search in Getir!</legend>
+                <div class="form-group">
+                    {{ form.category.label(class="form-control-label") }}
+                    {{ form.category }}
+                </div>
+                <div class="form-group">
+                    {{ form.product.label(class="form-control-label") }}
+                    {{ form.product }}
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="bucket" value="Add to bucket" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+        <script>
+            category_select = document.getElementById('category');
+            product_select = document.getElementById('product');
+            category_select.onchange = function()
+            {
+                category = category_select.value;
+
+                fetch('/product/' + category).then(function(response){
+                    response.json().then(function(data){
+                       let optionHTML = '';
+
+                       for (let product of data.prodlist){
+                            optionHTML += '<option value="' + product.id + '">' + product.name + '</option>';
+                       }
+
+                       product_select.innerHTML = optionHTML;
+                  });
+                });
+            }
+        </script>
+     </div>
+</div>
+
+{% endblock content %}

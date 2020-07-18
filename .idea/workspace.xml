@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8725eb30-3c0d-42e9-b927-31436d1b1cae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/EER.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Untitled Document.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getir_mapping.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getirwapp/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema plans/EER.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema plans/database.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema plans/eer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema plans/getir_mapping.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taslak_search.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EER.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled Document.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getir_mapping.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/getirwapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getirwapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getirwapp/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getirwapp/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/site.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getirwapp/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getirwapp/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getirwapp/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/getirwapp/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,6 +56,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aSUS\Desktop\372getir\getirwapp\templates" />
       <recent name="C:\Users\aSUS\Desktop\372getir\getirwapp\static\profile_pics" />
       <recent name="C:\Users\aSUS\PycharmProjects\Flask\flaskblog\static" />
       <recent name="C:\Users\aSUS\PycharmProjects\Flask\flaskblog" />
@@ -112,6 +117,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

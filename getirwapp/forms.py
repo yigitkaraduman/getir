@@ -1,6 +1,7 @@
+from flask import jsonify
 from flask_wtf import FlaskForm
 from flask_login import current_user
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField, SelectField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from getirwapp.models import User
 
@@ -49,3 +50,8 @@ class UpdateAccountForm(FlaskForm):
             user = User.query.filter_by(email=email.data).first()
             if user:
                 raise ValidationError('This email is taken. Please choose a different one.')
+
+class SearchForm(FlaskForm):
+    category = SelectField('Choose a category:', choices=[])
+    product = SelectField('Choose a product:', choices=[])
+

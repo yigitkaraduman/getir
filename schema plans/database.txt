@@ -1,0 +1,1 @@
+pro3 = Product(product_name='Kola', product_price='4.5', product_amount='100', product_category='Ýcecek', product_def='no_def')

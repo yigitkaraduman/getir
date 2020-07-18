@@ -28,7 +28,7 @@ class Product(db.Model, UserMixin):
     product_def = db.Column(db.String(50))
 
     def __repr__(self):
-        return f"User('{self.product_name}', '{self.product_price}', '{self.product_amount}', '{self.product_category}', '{self.product_def}')"
+        return f"Product('{self.product_name}', '{self.product_price}', '{self.product_amount}', '{self.product_category}', '{self.product_def}')"
 
 class Promotion(db.Model, UserMixin):
     promotion_id = db.Column(db.Integer, primary_key=True)
