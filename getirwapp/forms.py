@@ -54,4 +54,13 @@ class UpdateAccountForm(FlaskForm):
 class SearchForm(FlaskForm):
     category = SelectField('Choose a category:', choices=[])
     product = SelectField('Choose a product:', choices=[])
+    amount = SelectField('Choose amount:', choices={1,2,3,4,5})
+    add_bucket = SubmitField('Add to bucket')
 
+
+class OrderForm(FlaskForm):
+    amount = SelectField('Choose amount:', choices={1,2,3,4,5})
+    payment = SelectField('Choose a payment method:', choices={'Credit Cart', 'Cash'})
+    note = TextAreaField('Note:')
+    plastic_tools = BooleanField('Plastic Tools:')
+    submit_order = SubmitField('Order Now!')

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<div class="content-section">
+<h2>Payments</h2>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Total Price</th>
+          </tr>
+            {% for price in p %}
+                {% set item_1 = m[loop.index-1] %}
+                {% set item_2 = p[loop.index-1] %}
+          <tr>
+            <td>{{ item_1 }}</td>
+            <td>{{ item_2 }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+</div>
+{% endblock content %}

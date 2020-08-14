@@ -8,14 +8,19 @@
                 <legend class="border-bottom mb-4">Search in Getir!</legend>
                 <div class="form-group">
                     {{ form.category.label(class="form-control-label") }}
-                    {{ form.category }}
+                    {{ form.category(class="form-control form-control-lg") }}
                 </div>
                 <div class="form-group">
                     {{ form.product.label(class="form-control-label") }}
-                    {{ form.product }}
+                    {{ form.product(class="form-control form-control-lg") }}
                 </div>
                 <div class="form-group">
-                    <input type="submit" name="bucket" value="Add to bucket" class="btn btn-outline-info">
+                    {{ form.amount.label(class="form-control-label") }}
+                    {{ form.amount(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                   <!-- <input type="submit" name="bucket" value="Add to bucket" class="btn btn-outline-info">-->
+                    {{ form.add_bucket(class="btn btn-outline-info") }}
                 </div>
             </fieldset>
         </form>

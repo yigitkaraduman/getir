@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+    <form method="POST" action="">
+       {{ form.hidden_tag() }}
+       <fieldset class="form-group">
+        <h2>Bucket</h2>
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Price</th>
+          </tr>
+          {% for pnames in prod_names %}
+            {% set item_1 = prod_names[loop.index-1] %}
+            {% set item_2 = amount_sub[loop.index-1] %}
+            {% set item_3 = price_sub[loop.index-1] %}
+          <tr>
+            <td>{{ item_1 }}</td>
+            <td>{{ item_2 }}</td>
+            <td>{{ item_3 }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+
+    <div class="content-section">
+        <legend class="border-bottom mb-4">Total Price:{{ total_price}}</legend>
+        <div class="form-group">
+          {{ form.payment.label(class="form-control-label") }}
+          {{ form.payment(class="form-control form-control-lg") }}
+        </div>
+        <div class="form-group">
+          {{ form.note.label(class="form-control-label") }}
+          {{ form.note(class="form-control form-control-lg") }}
+        </div>
+        <div class="form-group">
+          {{ form.plastic_tools.label(class="form-control-label") }}
+          {{ form.plastic_tools }}
+        </div>
+         <div class="form-group">
+          {{ form.submit_order(class="btn btn-outline-info") }}
+        </div>
+    </div>
+
+   </fieldset>
+  </form>
+</div>
+{% endblock content %}
